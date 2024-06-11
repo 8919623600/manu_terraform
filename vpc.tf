@@ -23,6 +23,6 @@ output "cidr_block" {
   }
 
 output "instance_name" {
-  value = aws_instance.ec2.id
+  value = aws_instance.ec2.instance_type
   
 }
