@@ -46,3 +46,6 @@ output "instance_name" {
   value = aws_instance.ec2.instance_type
   
 }
+output "instance_ami_id"{
+  value = data.aws_ami.ami.id
+}
