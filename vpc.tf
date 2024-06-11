@@ -2,7 +2,7 @@ provider "aws" {}
 
 terraform {
   backend "s3" {
-    bucket = "terraform-devops29master "
+    bucket = "terraform-devops29master"
     key    = "dev/terraform"
     region = "us-east-1"
   }
