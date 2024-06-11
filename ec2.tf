@@ -43,7 +43,7 @@ resource "aws_security_group" "my_sg" {
  
 
 output "instance_name" {
-  value = aws_instance.ec2.name
+  value = aws_instance.ec2.instance_type
   
 }
 output "instance_ami_id"{
