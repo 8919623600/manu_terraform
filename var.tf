@@ -1,6 +1,6 @@
 variable "sample" {
     default = "welcome to terraform"
-    ami     =  "ami-0174d086840117932"
+    
 }
 
 output "sample_op" {
