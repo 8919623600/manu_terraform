@@ -9,7 +9,7 @@ resource "aws_vpc" "vpc" {
 }
 
 resource "aws_instance" "ec2" {
-  ami                     = "ami-0174d086840117932"
+  ami                     = "var.ami"
   instance_type           = "t2.micro"
 
   tags = {
