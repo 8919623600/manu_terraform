@@ -10,7 +10,7 @@ resource "aws_instance" "ec2" {
 }
 
 resource "aws_security_group" "my_sg" {
-  name        = "allow_tls"
+  name        = "sg"
   description = "Allow TLS inbound traffic and all outbound traffic"
 
   ingress {
@@ -28,7 +28,7 @@ resource "aws_security_group" "my_sg" {
   }
 
   tags = {
-    Name = "allow_tls"
+    Name = "sg"
   }
 }
  
