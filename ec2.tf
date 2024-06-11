@@ -11,7 +11,7 @@ resource "aws_instance" "ec2" {
   ami                     = data.aws_ami.ami.id  # fetching ami id from datasource
   instance_type           = "t2.micro"
   vpc_security_group_ids  = [aws_security_group.my_sg.id]
-  count                   = 3                        # count is a function which will create the resources as many mentioned on count
+  count                   = 2                        # count is a function which will create the resources as many mentioned on count
 
   tags = {
     Name = "Terraform instance-${count.index}"
