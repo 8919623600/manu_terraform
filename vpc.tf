@@ -1,5 +1,14 @@
 provider "aws" {}
 
+terraform {
+  backend "s3" {
+    bucket = "terraform-devops29master "
+    key    = "/dev/terraform"
+    
+  }
+}
+
+
 resource "aws_vpc" "vpc" {
   cidr_block = "172.16.0.0/16"
 
@@ -14,7 +23,7 @@ resource "aws_instance" "ec2" {
 
   tags = {
     Name = "Terraform instance"
-  }
+  } 
 }
  
 
