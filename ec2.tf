@@ -9,7 +9,7 @@ data "aws_ami" "ami" {
 
 }
 resource "aws_instance" "ec2" {
-  ami                     = data.aws_ami.ami  # fetching ami id from datasource
+  ami                     = data.aws_ami.ami.id  # fetching ami id from datasource
   instance_type           = "t2.micro"
   vpc_security_group_ids  = [aws_security_group.my_sg.id]
 
