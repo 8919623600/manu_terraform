@@ -6,6 +6,6 @@ module "ec2" {
     sg = module.sg.sgid
 }
 
-module "s3" {
-    source ="./s3"
+module "sg" {
+    source ="./sg"
 }
