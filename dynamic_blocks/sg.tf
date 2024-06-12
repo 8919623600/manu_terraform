@@ -35,14 +35,14 @@ resource "aws_security_group" "second_sample_sg" {
 
 
   
-  dynamic ingress_sample {
+  dynamic ingress {
     for_each = var.ingress_rule_sample
     content {
-    description     = ingress_sample.value["description"]
-    from_port       = ingress_sample.value["from_port"]
-    to_port         = ingress_sample.value["to_port"]
-    protocol        = ingress_sample.value["protocol"]
-    cidr_blocks     = ingress_sample.value["cidr_blocks"]
+    description     = ingress.value["description"]
+    from_port       = ingress.value["from_port"]
+    to_port         = ingress.value["to_port"]
+    protocol        = ingress.value["protocol"]
+    cidr_blocks     = ingress.value["cidr_blocks"]
     }
   }
    dynamic egress {
