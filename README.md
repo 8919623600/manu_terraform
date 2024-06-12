@@ -8,6 +8,7 @@ keywords needs to be remembered
 - popular functions 
 - depends_on
 - modules  - make our own modules and keep it in remote ( module sources can be from terraform registry, local or remotely)
+- for_each (looping)
 
 
 ## how to pass data from one module to another (follow the steps below )
@@ -18,5 +19,4 @@ keywords needs to be remembered
 - then on ec2 module declare a empty variable and pass that variable on sg id
 
 ## dynamic blocks
-suppose we have multi ingress to attach in security groups
-
+suppose we have multi ingress to attach in security groups. first create a variable.tf where we declare all the variables i list format. then on ec2 moudle create a dynamic block dynamic{} then perform a loop calling the variable values.
