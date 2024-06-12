@@ -30,3 +30,21 @@ variable  "ingress_rule" {
   }
     ]
 } 
+
+variable egress_rule {
+    default = [ {
+      description     = "egress all"
+      from_port       = 0
+      to_port         = 0
+      protocol        = "tcp"
+      cidr_blocks     = ["0.0.0.0/0"]
+    },
+    {
+      description     = "call 22 port"
+      from_port       = 22
+      to_port         = 22
+      protocol        = "tcp"
+      cidr_blocks     = ["0.0.0.0/0"]
+    }
+    ]
+}
