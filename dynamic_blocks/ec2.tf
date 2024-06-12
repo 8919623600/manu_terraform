@@ -16,8 +16,8 @@ resource "aws_instance" "ec2" {
   } 
 }
 
-resource "aws_security_group" "my_sg" {
-  name        = "sg"
+resource "aws_security_group" "sample_sg" {
+  name        = "my_sg"
   description = "Allow TLS inbound traffic and all outbound traffic"
 
   dynamic ingress {
