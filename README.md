@@ -9,7 +9,7 @@ keywords needs to be remembered
 - depends_on
 - modules  - make our own modules and keep it in remote ( module sources can be from terraform registry, local or remotely)
 - for_each (looping)
-
+- Ifelse condition (condition ? true_val : false_val)
 
 ## how to pass data from one module to another (follow the steps below )
 ## task is from security group module get the sg id and attach it with the ec2 instance which is in different module
