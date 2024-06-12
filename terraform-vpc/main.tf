@@ -6,5 +6,5 @@
 
 
 module "vpc" {
-  source = "git::https://github.com/8919623600/tf-module-vpc.git"
+  source = "./vendor/modules/vpc/"
 }
