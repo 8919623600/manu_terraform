@@ -33,16 +33,8 @@ resource "aws_security_group" "second_sample_sg" {
   name        = "my_sg_2"
   description = "Allow TLS inbound traffic and all outbound traffic"
 
-  dynamic ingress {
-    for_each = var.ingress_rule
-    content {
-    description     = ingress.value["description"]
-    from_port       = ingress.value["from_port"]
-    to_port         = ingress.value["to_port"]
-    protocol        = ingress.value["protocol"]
-    cidr_blocks     = ingress.value["cidr_blocks"]
-    }
-  }
+
+  
   dynamic ingress_sample {
     for_each = var.ingress_rule_sample
     content {
