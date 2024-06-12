@@ -44,7 +44,7 @@ resource "aws_security_group" "second_sample_sg" {
     }
   }
   dynamic ingress_sample {
-    for_each = ingress_rule_sample
+    for_each = var.ingress_rule_sample
     content {
     description     = ingress_sample.value["description"]
     from_port       = ingress_sample.value["from_port"]
