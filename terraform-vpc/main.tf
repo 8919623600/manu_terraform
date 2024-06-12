@@ -12,3 +12,5 @@ module "vpc" {
   PRIVATE_SUBNET_CIDR = var.PRIVATE_SUBNET_CIDR
 
 }
+
+
