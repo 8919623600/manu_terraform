@@ -14,8 +14,8 @@ keywords needs to be remembered
 ## how to pass data from one module to another (follow the steps below )
 ## task is from security group module get the sg id and attach it with the ec2 instance which is in different module
 
-- on sg module take the output 
-- on root module on main file inside ec2 block declare that output
+- on sg module get the output 
+- on root module on main file inside ec2 block declare that output 
 - then on ec2 module declare a empty variable and pass that variable on sg id
 
 ## dynamic blocks
@@ -31,3 +31,8 @@ on local blocl locals {} we can set the variables and call it as local.<name> , 
 - connection ( if i want make a connection to remote)
 
 ## if i want different instance with different properties
+
+## install step of terrafile 
+- wget https://github.com/coretech/terrafile/releases/download/v0.7/terrafile_0.7_Linux_i386.tar.gz
+- tar -xf terrafile_0.7_Linux_i386.tar.gz 
+- sudo mv terrafile /usr/local/bin/  

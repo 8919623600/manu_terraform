@@ -1,0 +1,3 @@
+vpc:
+    source:  "ghttps://github.com/8919623600/tf-module-vpc.git"
+    version: "main"
