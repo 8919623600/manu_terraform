@@ -8,7 +8,7 @@ data "aws_ami" "ami" {
 resource "aws_instance" "ec2" {
   ami                     = data.aws_ami.ami.id  # fetching ami id from datasource
   instance_type           = "t2.micro"
-  vpc_security_group_ids  = [aws_security_group.my_sg.id]
+  vpc_security_group_ids  = [aws_security_group.sample_sg.id]
   count                   = 2                        # count is a function which will create the resources as many mentioned on count
 
   tags = {
