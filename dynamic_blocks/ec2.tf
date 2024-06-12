@@ -12,9 +12,14 @@ resource "aws_instance" "ec2" {
   count                   = 2                        # count is a function which will create the resources as many mentioned on count
 
   tags = {
-    Name = "Terraform instance-${count.index+1}"
+    Name          = "Terraform instance-${count.index+1}"
+    business_unit = local.business_unit
+    manager       = local.manager
+    director      = local.director
   } 
 }
 
-
+output "director_name" {
+  value = local.director
+}
  

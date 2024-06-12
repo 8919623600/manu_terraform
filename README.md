@@ -20,3 +20,6 @@ keywords needs to be remembered
 
 ## dynamic blocks
 suppose we have multi ingress to attach in security groups. first create a variable.tf where we declare all the variables i list format. then on ec2 moudle create a dynamic block dynamic{} then perform a loop calling the variable values.
+
+## locals
+on local blocl local {} we can set the variables and call it as local.<name> , local.<>
