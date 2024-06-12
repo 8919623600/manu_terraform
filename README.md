@@ -22,4 +22,12 @@ keywords needs to be remembered
 suppose we have multi ingress to attach in security groups. first create a variable.tf where we declare all the variables i list format. then on ec2 moudle create a dynamic block dynamic{} then perform a loop calling the variable values.
 
 ## locals
-on local blocl local {} we can set the variables and call it as local.<name> , local.<>
+on local blocl locals {} we can set the variables and call it as local.<name> , local.<>. We declare locals and call it by local.<>
+
+## Provisioners
+- Local  ( if i want to execute something where my terraform is running)
+- Remote ( if i want to execute some on remote machines which is created by terraform)
+- file   ( if i want to copy something to remote)
+- connection ( if i want make a connection to remote)
+
+## if i want different instance with different properties

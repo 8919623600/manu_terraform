@@ -7,7 +7,7 @@ data "aws_ami" "ami" {
 }
 resource "aws_instance" "ec2" {
   ami                     = data.aws_ami.ami.id  # fetching ami id from datasource
-  instance_type           = local.business_unit == "pass" ? "t3.medium" : "t2.micro"
+  instance_type           = local.business_unit == "sass" ? "t2.micro" : "t2.medium"  
   vpc_security_group_ids  = [aws_security_group.sample_sg.id]
   count                   = 2                        # count is a function which will create the resources as many mentioned on count
 
