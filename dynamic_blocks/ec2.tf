@@ -1,5 +1,3 @@
-#here datasource is defined because it will fetch the properties which are already there in aws
-
 data "aws_ami" "ami" {
   most_recent      = true
   name_regex       = "devops-workstation-image"
@@ -22,13 +20,18 @@ resource "aws_security_group" "my_sg" {
   name        = "sg"
   description = "Allow TLS inbound traffic and all outbound traffic"
 
-  ingress {
-    from_port       = 22
-    to_port         = 22
-    protocol        = "tcp"
-    cidr_blocks     = ["0.0.0.0/0"]
+  dynamic ingress {
+    for_each = var.ingress_rule
+    content {
+    description     = ingress.value[description]
+    from_port       = ingress.value[from_port]
+    to_port         = ingress.value[to_port]
+    protocol        = ingress.value[protocol]
+    cidr_blocks     = ingress.value[cidr_blocks]
+    }
   }
 
+  
   egress {
     from_port       = 22
     to_port         = 22
@@ -41,11 +44,3 @@ resource "aws_security_group" "my_sg" {
   }
 }
  
-
-# output "instance_name" {
-#   value = aws_instance.ec2.instance_type
-  
-# }
-# output "instance_ami_id"{
-#   value = data.aws_ami.ami.id 
-# }

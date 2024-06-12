@@ -17,3 +17,6 @@ keywords needs to be remembered
 - on root module on main file inside ec2 block declare that output
 - then on ec2 module declare a empty variable and pass that variable on sg id
 
+## dynamic blocks
+suppose we have multi ingress to attach in security groups
+
