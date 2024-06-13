@@ -13,6 +13,7 @@ module "vpc" {
   ENV                   = var.ENV
   AZ                    = var.AZ
   DEFAULT_VPC_ID        = var.DEFAULT_VPC_ID
+  DEFAULT_VPC_CIDR      = var.DEFAULT_VPC_CIDR
 
 }
 
