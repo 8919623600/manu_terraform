@@ -15,7 +15,7 @@ module "vpc" {
   DEFAULT_VPC_ID        = var.DEFAULT_VPC_ID
   DEFAULT_VPC_CIDR      = var.DEFAULT_VPC_CIDR
   DEFAULT_VPC_RT_ID     = var.DEFAULT_VPC_RT_ID
-  public_subnet_id      = var.public_subnet_id 
+  
   
 
 }
