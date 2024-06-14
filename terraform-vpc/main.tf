@@ -26,6 +26,6 @@ module "ec2" {
     instance_type        = var.instance_type
     ENV                  = var.ENV
     pub_subnet_id        = var.pub_subnet_id
-    private_subnet_id    = module.vpc.private_subnet_id
+   
     
   }
