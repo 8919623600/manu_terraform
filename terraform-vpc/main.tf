@@ -24,7 +24,7 @@ module "ec2" {
     source               = "./vendor/modules/ec2/"
     instance_type        = var.instance_type
     ENV                  = var.ENV
-    subnet_id            = aws_subnet.public_subnet[0].id
+    subnet_id            = var.subnet_id
   
 
   }
