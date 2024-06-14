@@ -11,6 +11,6 @@ variable "DEFAULT_VPC_CIDR" {}
 variable "DEFAULT_VPC_RT_ID" {}
 
 #ec2_variables
-# variable "instance_type" {}
+variable "instance_type" {}
 # variable "subnet_id" {}
 variable "pub_subnet_id" {}
