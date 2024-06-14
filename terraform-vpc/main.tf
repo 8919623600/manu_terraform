@@ -27,6 +27,7 @@ module "ec2" {
     ENV                  = var.ENV
     pub_subnet_id        = var.pub_subnet_id
     private_subnet_id    = var.private_subnet_id
+    PUBLIC_SUBNET_CIDR   = var.PUBLIC_SUBNET_CIDR
    
     
   }
