@@ -12,4 +12,3 @@ variable "DEFAULT_VPC_RT_ID" {}
 
 #ec2_variables
 variable "instance_type" {}
-variable "public_subnet" {}
