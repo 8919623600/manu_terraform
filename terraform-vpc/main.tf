@@ -28,6 +28,7 @@ module "ec2" {
     pub_subnet_id        = var.pub_subnet_id
     private_subnet_id    = var.private_subnet_id
     PUBLIC_SUBNET_CIDR   = var.PUBLIC_SUBNET_CIDR
+    public_subnet        = module.vpc.aws_subnet.public_subnet.id
    
     
   }

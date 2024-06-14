@@ -15,4 +15,5 @@ variable "instance_type" {}
 # variable "subnet_id" {}
 variable "pub_subnet_id" {}
 variable "private_subnet_id" {}
+variable "public_subnet" {}
 
