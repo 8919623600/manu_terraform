@@ -14,4 +14,5 @@ variable "DEFAULT_VPC_RT_ID" {}
 variable "instance_type" {}
 # variable "subnet_id" {}
 variable "pub_subnet_id" {}
+variable "private_subnet_id" {}
 
