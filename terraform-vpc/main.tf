@@ -20,15 +20,11 @@ module "vpc" {
 }
 
 
-module "ec2" {
+# module "ec2" {
 
-    source               = "./vendor/modules/ec2/"
-    instance_type        = var.instance_type
-    ENV                  = var.ENV
-    pub_subnet_id        = var.pub_subnet_id
-    private_subnet_id    = var.private_subnet_id
-    # PUBLIC_SUBNET_CIDR   = var.PUBLIC_SUBNET_CIDR
-    
-   
-    
-  }
+#     source               = "./vendor/modules/ec2/"
+#     instance_type        = var.instance_type
+#     ENV                  = var.ENV
+
+        
+#   }
