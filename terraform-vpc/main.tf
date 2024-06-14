@@ -19,12 +19,12 @@ module "vpc" {
 }
 
 
-module "ec2" {
+# module "ec2" {
 
-    source               = "./vendor/modules/ec2/"
-    instance_type        = var.instance_type
-    ENV                  = var.ENV
-    subnet_id            = var.subnet_id
+#     source               = "./vendor/modules/ec2/"
+#     instance_type        = var.instance_type
+#     ENV                  = var.ENV
+#     subnet_id            = var.subnet_id
   
 
-  }
+#   }
