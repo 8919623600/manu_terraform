@@ -21,9 +21,9 @@ module "vpc" {
 
 module "ec2" {
 
-    source        = "./vendor/modules/ec2/"
-    instance_type = var.instance_type
-    ENV           = var.ENV
-    PRIVATE_SUBNET_CIDR   = var.PRIVATE_SUBNET_CIDR
+    source               = "./vendor/modules/ec2/"
+    instance_type        = var.instance_type
+    ENV                  = var.ENV
+  
 
   }
