@@ -15,6 +15,7 @@ module "vpc" {
   DEFAULT_VPC_ID        = var.DEFAULT_VPC_ID
   DEFAULT_VPC_CIDR      = var.DEFAULT_VPC_CIDR
   DEFAULT_VPC_RT_ID     = var.DEFAULT_VPC_RT_ID
+  public_subnet_id      = var.public_subnet_id
   
   
 
@@ -26,6 +27,7 @@ module "ec2" {
     source               = "./vendor/modules/ec2/"
     instance_type        = var.instance_type
     ENV                  = var.ENV
-    public_subnet_id     = var.public_subnet_id
+    public_subnet_id     = module.vpc.public_subnet_id
+
         
   }
