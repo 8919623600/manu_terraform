@@ -3,6 +3,6 @@ output "public_subnet" {
 
   }
 
-   output "private_subnet" {
-    value = module.vpc.private_subnet.*.id
-  }
+#    output "private_subnet" {
+#     value = module.vpc.private_subnet.*.id
+#   }
