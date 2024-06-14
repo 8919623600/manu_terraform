@@ -27,7 +27,7 @@ module "ec2" {
     source               = "./vendor/modules/ec2/"
     instance_type        = var.instance_type
     ENV                  = var.ENV
-    public_subnet_id     = module.vpc.public_subnet_id
+    public_subnet_id     = element(module.vpc.public_subnet_id.*, count.index)
 
         
   }
