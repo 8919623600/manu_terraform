@@ -10,4 +10,7 @@ variable "DEFAULT_VPC_ID" {}
 variable "DEFAULT_VPC_CIDR" {}
 variable "DEFAULT_VPC_RT_ID" {}
 
+#ec2
+variable "instance_type" {}
+
 
