@@ -14,4 +14,5 @@ output "VPC_ID" {
 
 output "SG_ID" {
     value = module.ec2.SG_ID
+
 }
