@@ -15,5 +15,7 @@ variable "instance_type" {}
 
 #common
 variable "ENV" {}
+variable "SG_ID" {}
+
 
 
