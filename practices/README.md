@@ -37,5 +37,9 @@ on local blocl locals {} we can set the variables and call it as local.<name> , 
 - tar -xf terrafile_0.7_Linux_i386.tar.gz 
 - sudo mv terrafile /usr/local/bin/  
 
-alias t='terrafile -f env-dev/Terrafile ; terraform init -backend-config=env-dev/dev-backend.tfvars ; terraform plan --var-file env-dev/dev.tfvars ; terraform apply --auto-approve --var-file env-dev/dev.tfvars'
+alias vpc='terrafile -f env-dev/Terrafile ; terraform init -backend-config=env-dev/dev-backend.tfvars ; terraform plan --var-file env-dev/dev.tfvars ; terraform apply --auto-approve --var-file env-dev/dev.tfvars'
 
+
+alias ec2='terrafile -f env-dev/Terrafile ; terraform init -backend-config=env-dev/dev-backend.tfvars ; terraform plan --var-file env-dev/dev.tfvars ; terraform apply --auto-approve --var-file env-dev/dev.tfvars'
+
+alias td='terraform destroy --auto-approve --var-file env-dev/dev.tfvars'

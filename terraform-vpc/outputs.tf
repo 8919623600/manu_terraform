@@ -17,7 +17,6 @@ output "SG_ID" {
 
 }
 
-
 output "VPC_CIDR" {
     value = module.vpc.VPC_CIDR
 }
