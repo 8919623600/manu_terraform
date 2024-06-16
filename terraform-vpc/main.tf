@@ -28,7 +28,7 @@ module "ec2" {
     instance_type        = var.instance_type
     ENV                  = var.ENV
     
-        
+        depends_on = [module.vpc]
   }
 
   
