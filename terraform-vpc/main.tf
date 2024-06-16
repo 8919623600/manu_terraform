@@ -16,10 +16,7 @@ module "vpc" {
   DEFAULT_VPC_CIDR      = var.DEFAULT_VPC_CIDR
   DEFAULT_VPC_RT_ID     = var.DEFAULT_VPC_RT_ID
 
-  
-  
-
-}
+  }
 
 
 module "ec2" {
@@ -28,7 +25,5 @@ module "ec2" {
     instance_type        = var.instance_type
     ENV                  = var.ENV
     
-        # depends_on = [module.vpc]
   }
 
-  
