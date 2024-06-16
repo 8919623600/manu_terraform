@@ -16,3 +16,8 @@ output "SG_ID" {
     value = module.vpc.SG_ID
 
 }
+
+output "sg_status" {
+    value = module.vpc.sg_status
+
+}
