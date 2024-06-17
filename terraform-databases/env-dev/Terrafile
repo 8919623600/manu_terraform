@@ -1,5 +1,5 @@
-mongodb:
-    source:  "https://github.com/8919623600/tf-module-mongodb.git"
+docdb:
+    source:  "https://github.com/8919623600/tf-module-docdb.git"
     version: "main"
 
 # mysql:
