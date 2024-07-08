@@ -19,12 +19,12 @@ module "vpc" {
   }
 
 
-# module "ec2" {
+module "ec2" {
 
-#     source               = "./vendor/modules/ec2/"
-#     instance_type        = var.instance_type
-#     ENV                  = var.ENV
+    source               = "./vendor/modules/ec2/"
+    instance_type        = var.instance_type
+    ENV                  = var.ENV
     
-#     depends_on = [module.vpc]
-#   }
+    depends_on = [module.vpc]
+  }
 
